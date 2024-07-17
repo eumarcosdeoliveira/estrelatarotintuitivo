@@ -35,7 +35,7 @@ const BannerWithShelf = () => {
           id="scroll-container"
           className={`flex justify-start space-x-4 bg-white p-4 rounded-xl overflow-x-hidden whitespace-nowrap ${styles['scroll-container']}`}
         >
-          {['Produto 01', 'Produto 02', 'Produto 03', 'Produto 04', 'Produto 05', 'Produto 06', 'Produto 07', 'Produto 08'].map((produto, index) => (
+          {['Adoçamento de Casais', 'Limpeza Energética', 'Interpretação de Sonhos', 'Numerologia', 'Leitura de Tarot', 'Pergunta Objetiva'].map((produto, index) => (
             <div key={index} className="flex flex-row items-center space-x-2.5 bg-gray-100 p-4 rounded-xl flex-shrink-0">
               <button className="bg-white p-2 rounded-full">
                 <span className="text-purple-500 text-2xl">+</span>

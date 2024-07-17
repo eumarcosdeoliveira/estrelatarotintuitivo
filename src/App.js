@@ -6,7 +6,7 @@ import About from './components/pages/About';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="App font-inter">
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
