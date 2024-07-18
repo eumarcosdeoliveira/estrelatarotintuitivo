@@ -5,7 +5,7 @@ const TabHM = ["Horóscopo", "Mapa Astral"];
 export default function App() {
   return (
     <Tabs.Root
-      className="max-w-screen-xl min-w-72 mx-auto px-4 md:px-1"
+      className="max-w-screen-xl min-w-72 mx-auto md:px-1"
       defaultValue="Horóscopo"
     >
       <Tabs.List

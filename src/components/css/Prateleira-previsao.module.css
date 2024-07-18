@@ -1,0 +1,13 @@
+/* Prateleira-previsao.module.css */
+
+.desc-text {
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Estima o número de linhas para atingir 175 caracteres */
+    -webkit-box-orient: vertical;
+    line-height: 1.5em; /* Ajuste conforme necessário */
+    max-height: 7.5em; /* Ajuste conforme necessário */
+};
+  
