@@ -51,7 +51,7 @@ const previsoes = [
 ];
 
 const TruncatedDescription = ({ desc, href }) => {
-  const truncatedDesc = truncateText(desc, 175);
+  const truncatedDesc = truncateText(desc, 120);
   return (
     <div className="text-justify">
       <p className="line-clamp-ellipsis text-gray-400 text-sm pb-1 mt-1">{truncatedDesc}</p>
@@ -60,7 +60,7 @@ const TruncatedDescription = ({ desc, href }) => {
   );
 };
 
-export default () => {
+const Previsoes = () => {
   return (
     <section className="mt-4 mx-auto  max-w-screen-xl md:px-1">
       <div className="w-full border-b-2 border-violet-600 flex gap-x-3 text-sm">
@@ -85,3 +85,5 @@ export default () => {
     </section>
   );
 };
+
+export default Previsoes;

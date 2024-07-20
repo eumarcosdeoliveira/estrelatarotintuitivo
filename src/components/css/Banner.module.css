@@ -2,26 +2,30 @@
 #scroll-container {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    border-radius: 30px;
   }
   #scroll-container::-webkit-scrollbar {
     display: none;  /* Chrome, Safari, and Opera */
+    border-radius: 30px;
   }
   
   .fade-out {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 2rem; /* Adjust the width of the fade effect */
+    width: 10rem; /* Adjust the width of the fade effect */
     pointer-events: none; /* Allow clicks to pass through */
   }
   
   .fade-out-left {
     left: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background: linear-gradient(to right, rgba(255, 255, 255, 50), rgba(255, 255, 255, 0));
+    border-radius: 20px;
   }
   
   .fade-out-right {
     right: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background: linear-gradient(to left, rgba(255, 255, 255, 150), rgba(255, 255, 255, 0));
+    border-radius: 20px;
   }
   
