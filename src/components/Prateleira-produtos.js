@@ -9,7 +9,7 @@ const truncateText = (text, maxLength) => {
 
 const previsoes = [
   {
-    previsao: "Hoje",
+    slug: "Hoje",
     title: "What is SaaS? Software as a Service Explained",
     desc: "Going into this journey, I had a standard therapy regimen, based on looking at the research literature. After I saw the movie, this is the test of responsive",
     img: "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
@@ -20,7 +20,7 @@ const previsoes = [
     tags: "ex, ex, ex"
   },
   {
-    previsao: "Semanal",
+    slug: "Semanal",
     title: "A Quick Guide to WordPress Hosting",
     desc: "According to him, â€œI'm still surprised that this has happened. But we are surprised because we are so surprised.â€More revelations about Whittington will be featured in the film",
     img: "https://images.unsplash.com/photo-1620287341056-49a2f1ab2fdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
@@ -31,7 +31,7 @@ const previsoes = [
     tags: "ex, ex, ex"
   },
   {
-    previsao: "Mensal",
+    slug: "Mensal",
     title: "7 Promising VS Code Extensions Introduced in 2022",
     desc: "I hope I remembered all the stuff that they needed to know. They're like, 'okay,' and write it in their little reading notebooks. I realized today that I have all this stuff that",
     img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
@@ -42,7 +42,18 @@ const previsoes = [
     tags: "ex, ex, ex"
   },
   {
-    previsao: "Anual",
+    slug: "Anual",
+    title: "How to Use Root C++ Interpreter Shell to Write C++ Programs",
+    desc: "The powerful gravity waves resulting from the impact of the planets' moons â€” four in total â€” were finally resolved in 2015 when gravitational microlensing was used to observe the",
+    img: "https://images.unsplash.com/photo-1617529497471-9218633199c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    authorLogo: "https://api.uifaces.co/our-content/donated/KtCFjlD4.jpg",
+    authorName: "Lourin",
+    date: "Jan 4 2022",
+    href: "https://www.google.com/",
+    tags: "ex, ex, ex"
+  },
+  {
+    slug: "Anual",
     title: "How to Use Root C++ Interpreter Shell to Write C++ Programs",
     desc: "The powerful gravity waves resulting from the impact of the planets' moons â€” four in total â€” were finally resolved in 2015 when gravitational microlensing was used to observe the",
     img: "https://images.unsplash.com/photo-1617529497471-9218633199c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
@@ -52,6 +63,7 @@ const previsoes = [
     href: "https://www.google.com/",
     tags: "ex, ex, ex"
   }
+  
 ];
 
 const TruncatedDescription = ({ desc, href }) => {
@@ -64,12 +76,12 @@ const TruncatedDescription = ({ desc, href }) => {
   );
 };
 
-const Previsoes = () => {
+const Prateleira_produtos = () => {
   return (
-    <section className="mt-4 mx-auto  max-w-screen-xl md:px-1">
+    <section className="mt-20 mx-auto  max-w-screen-xl md:px-1">
       <div className="w-full border-b-2 border-violet-600 flex gap-x-3 text-sm">
         <h1 className="text-3xl pb-1 text-gray-800 font-semibold">
-          Confira Previsões
+          Produtos
         </h1>
       </div>
       <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -77,8 +89,7 @@ const Previsoes = () => {
           <article className="mx-full mt-1 shadow-sm border rounded-2xl duration-300 hover:shadow-lg" key={key}>
             <a href={item.href} className="flex flex-col h-full">
                 <div className="pt-4 ml-5 mr-5 mb-4 flex-grow">
-                    <h3 className="text-2xl pb-5 text-violet-600 font-extrabold">{item.previsao
-                }</h3>
+                    <h3 className="text-2xl pb-5 text-violet-600 font-extrabold">{item.slug}</h3>
                     <p className="text-gray-400 text-sm pb-2 mt-1 font-extrabold">Confira seu signo</p>
                     <TruncatedDescription desc={item.desc} href={item.href} />
                 </div>
@@ -91,4 +102,4 @@ const Previsoes = () => {
   );
 };
 
-export default Previsoes;
+export default Prateleira_produtos;

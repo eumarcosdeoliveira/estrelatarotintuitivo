@@ -3,16 +3,18 @@ import React from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
 import Main from '../Main';
-import Products from './Products';
+import Prateleira_produtos from '../Prateleira-produtos';
+import BannerWithShelf from '../Banner';
 
-function Home() {
+function Products() {
   return (
     <div className="App">
       <Header />
-      <Main />
+        <BannerWithShelf />
+       <Prateleira_produtos />
       <Footer />
     </div>
   );
 }
 
-export default Home;
+export default Products;

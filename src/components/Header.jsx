@@ -59,11 +59,6 @@ export default function Example() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              Produtos
-              <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none text-gray-400" />
-            </PopoverButton>
-
             <PopoverPanel
               transition
               className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
@@ -101,7 +96,9 @@ export default function Example() {
               </div>
             </PopoverPanel>
           </Popover>
-         
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            Produtos
+          </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Marketplace
           </a>
